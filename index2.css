@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/*esto es para retirar los estilos que trae por defaultd el navegador*/
+
+@font-face {
+  font-family: 'TrajanPro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+  }
+
+header{
+    padding: 30px;
+    height: 70pxpx;
+    background-color: black;
+    top: 0;              /* Pegado al tope de la pantalla */
+    width: 100%;         /* Que abarque todo el ancho */
+    z-index: 1000; 
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Opcional, si deseas centrarlo también verticalmente */
+
+}
+
+nav{
+    margin-left: 35px;
+}
+header nav a {
+    font-family: 'TrajanPro';
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header img{
+    width: 60px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 100%;
+}
+
+ body{
+    background-image: url(Image/fondo.jpg); /* Reemplaza con la ruta correcta */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen mientras el contenido se desplaza */
+    color: white; /* Asegura que el texto sea visible */
+ }
+
+
+ .contenido{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'TrajanPro';
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+}
+
+
+
+#Info-General , #Cast{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+#Info-General p{
+    margin: 10px;
+}
+
+#Info-General img{
+    width: 250px;
+    height: 256px;
+    margin: 10px;
+}
+
+#generlacuadro{
+    height: 300px;
+    width: 90%;
+    border-radius: 10px 10px 10px 10px ;  
+}
+
+#castcuadro{
+    width: 90%;
+    border-radius: 10px 10px 10px 10px ;  
+    margin-left: 125px;
+}
+
+#Cast video{
+    width: 45%;
+    height: 300px;
+    margin: 15px;
+    
+}
+
+#Cast p{
+    font-size: 20px;
+    font-family: 'TrajanPro';
+    margin: 10px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    text-align: center; /* Asegura que el texto dentro esté centrado */
+}
+
+#castInfo{
+    margin-top: 130px;
+}
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background-color: #000000;
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+

@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'TrajanPro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+    }
+  
+  header{
+    padding: 30px;
+    height: 70pxpx;
+    background-color: black;
+    top: 0;              /* Pegado al tope de la pantalla */
+    width: 100%;         /* Que abarque todo el ancho */
+    z-index: 1000; 
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Opcional, si deseas centrarlo también verticalmente */
+
+  }
+  
+  nav{
+      margin-left: 35px;
+  }
+  header nav a {
+      font-family: 'TrajanPro';
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  header img{
+      width: 60px; /* Ajusta el ancho de la imagen */
+      height: auto; /* Mantiene la proporción de la imagen */
+      border-radius: 100%;
+  }
+
+  body{
+    font-family: Arial, sans-serif;
+    background-image: url(Image/fondo-multimedia.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen mientras el contenido se desplaza */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+#Super-contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+video{
+    width: 300px;
+    height: auto;
+    margin: 15px;
+}
+
+
+
+#fondo{
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgba(34, 34, 34, 0.8);
+    width: 1000px;
+    height: 650px;
+}
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background-color: #000000;
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+}

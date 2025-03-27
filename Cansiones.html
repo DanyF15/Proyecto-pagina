@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Canciones.js"></script>
+    <link rel="stylesheet" href="Canciones.css">
+    <title>Epic the musical</title>
+</head>
+<body>
+    <section id="intro">
+        <header>
+            <nav>
+                <a href="index2.html">
+                    <img src="Image/2.png" alt="icono">
+                </a>
+                <a href="index2.html">Inicio</a>
+                <a href="#intro">Sagas</a>
+                <a href="Personajes.html">Personajes</a>
+                <a href="Videos.html">Videos</a>
+            </nav>
+          </header>          
+    </section>
+
+    <div id="Super-contenedor">
+
+    <div class="contenedor">
+    <div class="player" id="troy">  
+        <div class="album-cover" onclick="toggleTracklist(this)">  
+            <img src="Image/troy.jpg" alt="Album Cover">  
+        </div>  
+        <div class="song-info">  
+            <h3 class="song-title">The horse and the infant</h3>  
+            <p class="album-name">Troy Saga</p>  
+        </div>  
+        
+        <audio class="audio" controls>  
+            <source src="track1.mp3" type="audio/mpeg">  
+        </audio>  
+        <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+            <li class="track" onclick="playTrack('canciones/troy/Jorge Rivera-Herrans - The Horse and the Infant (1).mp3', 'The Horse and the Infant', this)">  
+                <span>The Horse and the Infant</span>  
+                <span>03:54</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/troy/Jorge Rivera-Herrans - Just a Man (1).mp3', 'Just a Man', this)">  
+                <span>Just a Man</span>  
+                <span>02:28</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/troy/Jorge Rivera-Herrans - Full Speed Ahead.mp3', 'Full Speed Ahead', this)">  
+                <span>Full Speed Ahead</span>  
+                <span>02:59</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/troy/Jorge Rivera-Herrans - Open Arms.mp3', 'Open Arms', this)">  
+                <span>Open Arms</span>  
+                <span>03:18</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/troy/Jorge Rivera-Herrans - Warrior of the Mind.mp3', 'Warrior of the Mind', this)">  
+                <span>Warrior of the Mind</span>  
+                <span>03:28</span>  
+            </li>  
+        </ul>  
+    </div>  
+
+    <div class="player" id="Cyclops">  
+        <div class="album-cover" onclick="toggleTracklist(this)">  
+            <img src="Image/cyclops.jpg" alt="Album Cover">  
+        </div>  
+        <div class="song-info">  
+            <h3 class="song-title">Polyphemus</h3>  
+            <p class="album-name">Cyclpos Saga</p>  
+        </div>  
+        <audio src="canciones"></audio>
+        <audio class="audio" controls>  
+            <source src="track1" type="audio/mpeg">  
+        </audio>  
+        <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+            <li class="track" onclick="playTrack('canciones/polyphemus/Jorge Rivera-Herrans - Polyphemus.mp3', 'Polyphemus', this)">  
+                <span>Polyphemus</span>  
+                <span>03:36</span>  
+            </li>  
+            
+            <li class="track" onclick="playTrack('canciones/polyphemus/Jorge Rivera-Herrans - Survive.mp3', 'Survive', this)">  
+                <span>Survive</span>  
+                <span>03:14</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/polyphemus/Jorge Rivera-Herrans - Remember Them.mp3', 'Remember Them', this)">  
+                <span>Remember Them</span>  
+                <span>04:08</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/polyphemus/Jorge Rivera-Herrans - My Goodbye.mp3', 'My Goodbye', this)">  
+                <span>My Goodbye</span>  
+                <span>03:17</span>  
+            </li>  
+        </ul>  
+    </div>  
+    
+
+    <div class="player" id="ocean">  
+        <div class="album-cover" onclick="toggleTracklist(this)">  
+            <img src="Image/ocean.jpg" alt="Album Cover">  
+        </div>  
+        <div class="song-info">  
+            <h3 class="song-title">Storm</h3>  
+            <p class="album-name">Troy Ocean</p>  
+        </div>  
+        
+        <audio class="audio" controls>  
+            <source src="track1" type="audio/mpeg">  
+        </audio>  
+        <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+            <li class="track" onclick="playTrack('canciones/ocean/Storm.mp3', 'Storm', this)">  
+                <span>Storm</span>  
+                <span>03:54</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/ocean/Luck Runs Out.mp3', 'Luck Runs Out', this)">  
+                <span>Luck Runs Out</span>  
+                <span>02:28</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/ocean/Keep Your Friends Close.mp3', 'Keep Your Friends Close', this)">  
+                <span>Keep Your Friends Close</span>  
+                <span>02:59</span>  
+            </li>  
+            <li class="track" onclick="playTrack('canciones/ocean/Ruthlessness.mp3', 'Ruthlessness', this)">  
+                <span>Ruthlessness</span>  
+                <span>03:18</span>  
+            </li>  
+        </ul>  
+    </div>  
+    </div><script>//troy, cyclops, ocean</script>
+    
+    <div class="contenedor">
+        <div class="player" id="circe">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/circe.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">Pupper</h3>  
+                <p class="album-name">Circe Saga</p>  
+            </div>  
+            
+
+            <audio src="canciones/circe"></audio>
+            <audio class="audio" controls>  
+                <source src="track1.mp3" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/circe/Jorge Rivera-Herrans - Puppeteer.mp3', 'Puppeteer', this)">  
+                    <span>Puppeteer</span>  
+                    <span>04:09</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/circe/Jorge Rivera-Herrans - Wouldn t You Like.mp3', 'Wouldn t You Like', this)">  
+                    <span>Wouldn t You Like</span>  
+                    <span>02:54</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/circe/Jorge Rivera-Herrans - Done For (1).mp3', ' Done For', this)">  
+                    <span> Done For</span>  
+                    <span>02:27</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/circe/Jorge Rivera-Herrans - There Are Other Ways.mp3', 'There Are Other Ways', this)">  
+                    <span>There Are Other Ways</span>  
+                    <span>03:27</span>  
+                </li>  
+
+            </ul>  
+        </div>  
+    
+        <div class="player" id="underwolr">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/underworld.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">The Underwolrd</h3>  
+                <p class="album-name">Underwolr Saga</p>  
+            </div>  
+            
+
+            <audio class="audio" controls>  
+                <source src="track1" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/underworld/Jorge Rivera-Herrans - The Underworld.mp3', 'The Underworld', this)">  
+                    <span>The Underworld</span>  
+                    <span>04:17</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/underworld/Jorge Rivera-Herrans - No Longer You.mp3', 'No Longer You', this)">  
+                    <span>No Longer You</span>  
+                    <span>02:48</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/underworld/Jorge Rivera-Herrans - Monster.mp3', 'Monster', this)">  
+                    <span>Monster</span>  
+                    <span>03:39</span>  
+                </li>  
+                 
+            </ul>  
+        </div>  
+        
+        <div class="player" id="thunder">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/thunder.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">Suffering</h3>  
+                <p class="album-name">Thunder Saga</p>  
+            </div>  
+            
+
+            <audio class="audio" controls>  
+                <source src="track1" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/thunder/Jorge Rivera-Herrans - Suffering (1).mp3', 'Suffering', this)">  
+                    <span>Suffering</span>  
+                    <span>02:30</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/thunder/Jorge Rivera-Herrans - Different Beast (1).mp3', 'Different Beast', this)">  
+                    <span>Different Beast</span>  
+                    <span>03:30</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/thunder/Jorge Rivera-Herrans - Scylla (1).mp3', 'Scylla', this)">  
+                    <span>Scylla</span>  
+                    <span>02:54</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/thunder/Jorge Rivera-Herrans - Mutiny.mp3', 'Mutiny', this)">  
+                    <span>Mutiny</span>  
+                    <span>04:53</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/thunder/Jorge Rivera-Herrans - Thunder Bringer (1).mp3', 'Thunder Bringer', this)">  
+                    <span>Thunder Bringer</span>  
+                    <span>04:09</span>  
+                </li>  
+            </ul>  
+        </div>  
+    </div><script>//circe, underwolr, thunde</script>
+
+    <div class="contenedor">
+        <div class="player" id="wisdom">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/windo.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">Legendary</h3>  
+                <p class="album-name">Wisdom Saga</p>  
+            </div>  
+            
+
+            <audio class="audio" controls>  
+                <source src="track1.mp3" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/wisdom/Jorge Rivera-Herrans - Legendary.mp3', 'Legendary', this)">  
+                    <span>Legendary</span>  
+                    <span>03:14</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/wisdom/Jorge Rivera-Herrans - Little Wolf.mp3', 'Little wolf', this)">  
+                    <span>Little wolf</span>  
+                    <span>03:48</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/wisdom/Jorge Rivera-Herrans - We ll Be Fine.mp3', 'Well be fine', this)">  
+                    <span>Well be fine</span>  
+                    <span>02:06</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/wisdom/Jorge Rivera-Herrans - Love in Paradise.mp3', 'Love in paradise', this)">  
+                    <span>Love in paradise</span>  
+                    <span>04:11</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/wisdom/Jorge Rivera-Herrans - God Games.mp3', 'God games', this)">  
+                    <span>God games</span>  
+                    <span>05:20</span>  
+                </li>  
+            </ul>  
+        </div>  
+    
+        <div class="player" id="vengeance">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/vengeance.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">Not sorry for loving you</h3>  
+                <p class="album-name">Vengeance Saga</p>  
+            </div>  
+            
+
+            <audio class="audio" controls>  
+                <source src="track1" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/vengeance/jorge_rivera_herrans__not-sorry-for-loving-you.mp3', 'Not sorry for loving you', this)">  
+                    <span>Not sorry for loving you</span>  
+                    <span>03:05</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/vengeance/jorge-rivera-herrans-dangerous.mp3', 'Dangerous', this)">  
+                    <span>Dangerous</span>  
+                    <span>03:24</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/vengeance/jorge-rivera-herrans-charybdis (1).mp3', 'Charybdis', this)">  
+                    <span>Charybdis</span>  
+                    <span>02:14</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/vengeance/jorge_rivera_herrans_get_in_the_water.mp3', 'Get in the water', this)">  
+                    <span>Get in the water</span>  
+                    <span>03:41</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/vengeance/jorge_rivera_herrans_six-hunder-strike.mp3', 'Six hundred strikes', this)">  
+                    <span>Six hundred strikes</span>  
+                    <span>03:32</span>  
+                </li> 
+            </ul>  
+        </div>  
+        
+        <div class="player" id="ithaca">  
+            <div class="album-cover" onclick="toggleTracklist(this)">  
+                <img src="Image/ithaca.jpg" alt="Album Cover">  
+            </div>  
+            <div class="song-info">  
+                <h3 class="song-title">The challenge</h3>  
+                <p class="album-name">Itaca Saga</p>  
+            </div>  
+
+
+            
+            <audio src="canciones/ithaca"></audio>
+            <audio class="audio" controls>  
+                <source src="track1" type="audio/mpeg">  
+            </audio>  
+            <ul class="tracklist" style="display: none;"> <!-- Inicialmente oculto -->  
+                <li class="track" onclick="playTrack('canciones/ithaca/Jorge_Rivera_Herrans-The challenge.mp3', 'The challenge', this)">  
+                    <span>The challenge</span>  
+                    <span>03:22</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/ithaca/Jorge_Rivera_Herrans-Hold them donw.mp3', 'Hold them donw', this)">  
+                    <span>Hold them donw</span>  
+                    <span>03:04</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/ithaca/Jorge_Rivera_Herrans-Odyseus.mp3', 'Odyseus', this)">  
+                    <span>Odyseus</span>  
+                    <span>05:32</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/ithaca/Jorge_Rivera_Herrans-Cant help but wonder.mp3', 'Cant help but wonder', this)">  
+                    <span>Cant help but wonder</span>  
+                    <span>04:52</span>  
+                </li>  
+                <li class="track" onclick="playTrack('canciones/ithaca/Jorge_Rivera_Herrans-Would_You_Fall_in_Love_with.mp3', 'Woul you fall in love whit me again', this)">  
+                    <span>Woul you fall in love whit me again</span>  
+                    <span>05:46</span>  
+                </li>  
+            </ul>  
+        </div>  
+    </div><script>//wisdom, vengeance, ithaca</script>
+
+    </div>
+    
+
+    <footer>&copy; Dany Flores 2025.Todos los derechos reservados</footer>
+</body>
+</html>

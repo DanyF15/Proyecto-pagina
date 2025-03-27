@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'TrajanPro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+    }
+  
+  header{
+      padding: 30px;
+      height: 70pxpx;
+      background-color: black;
+      top: 0;              /* Pegado al tope de la pantalla */
+      width: 100%;         /* Que abarque todo el ancho */
+      z-index: 1000; 
+  }
+  
+  nav{
+      margin-left: 35px;
+  }
+  header nav a {
+      font-family: 'TrajanPro';
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+  }
+  
+  header img{
+      width: 60px; /* Ajusta el ancho de la imagen */
+      height: auto; /* Mantiene la proporción de la imagen */
+      border-radius: 100%;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(Image/fondo-multimedia.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen mientras el contenido se desplaza */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+#Super-contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.player {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    margin: 15px ;
+    transition: transform 0.3s ease; /* Suaviza la transformación */  
+}
+  
+
+.player:hover {  
+    transform: scale(1.00); /* Aumenta el tamaño al 105% */  
+}
+.album-cover img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer; /* Cambié el cursor para que se vea que se puede hacer clic */
+}
+.song-info h3, .song-info p {
+    margin: 5px 0;
+}
+.tracklist {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Opcional, si deseas centrarlo también verticalmente */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: fit-content; /* Hace que la lista solo ocupe el espacio necesario */
+}
+.track {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+.track:hover {
+    background: #444;
+}
+
+.audio {  
+    width: 230px; /* Cambia el ancho del reproductor de audio */   
+    border-radius: 0; /* Bordes redondeados */  
+    padding: 10px; /* Espaciado interno */  
+}  
+
+/* Personalizar controles (si es posible) */  
+audio {  
+    width: 80%; /* Asegura que el audio use todo el ancho del contenedor */  
+} 
+
+footer {
+    width: 100%;
+    padding: 5%;
+    background-color: #000000;
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+}

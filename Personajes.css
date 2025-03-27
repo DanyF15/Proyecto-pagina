@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/*esto es para retirar los estilos que trae por defaultd el navegador*/
+
+@font-face {
+  font-family: 'TrajanPro';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+  }
+
+header{
+    padding: 30px;
+    height: 70pxpx;
+    background-color: black;
+    top: 0;              /* Pegado al tope de la pantalla */
+    width: 100%;         /* Que abarque todo el ancho */
+    z-index: 1000; 
+}
+
+nav{
+    margin-left: 35px;
+}
+header nav a {
+    font-family: 'TrajanPro';
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header img{
+    width: 60px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 100%;
+}
+
+body{
+  background-image: url(Image/Download\ premium\ image\ of\ Ancient\ greek\ style\ background\ outdoors\ painting\ nature_\ \ about\ background\,\ cloud\,\ scenery\,\ sky\,\ and\ art\ 13008408.jpg); /* Reemplaza con la ruta correcta */
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-attachment: fixed; /* Fija la imagen mientras el contenido se desplaza */
+  color: white; /* Asegura que el texto sea visible */
+}
+
+
+#athenea ,#odysseus, #polyphems{
+  margin-top: 65px;
+}
+
+
+.contenido{
+    font-family: 'TrajanPro';
+      font-size:18px;
+      flex: 3;
+      padding-right: 20px;
+      margin: 20px;
+      width: 50%;
+      height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      text-align: center; /* Asegura que el texto dentro esté centrado */
+      background-color: white;
+      border-radius: 10px 10px 10px 10px ;     
+      color: #000000;
+  
+  }
+
+.contenido > .Perfil{
+  border-radius: 10px 10px 10px 10px ;
+}
+
+
+  
+  .characters{
+      display: flex;
+      margin-left: 45px;
+      margin-right: 45px;
+      justify-content: center; /* Centrar horizontalmente */  
+    align-items: center; /* Centrar verticalmente */  
+    text-align: center; /* Centrar el texto dentro de los elementos */  
+    height: 100vh; /* Ajusta a la altura de la ventana si es necesario */ 
+  }
+
+
+.Perfil, .contenido {  
+    margin: 20px; /* Espacio entre los elementos */  
+    padding: 20px; /* Espacio interno */  
+    border: 1px solid #ccc; /* Border opcional para visibilidad */  
+    border-radius: 10px; /* Bordes redondeados opcional */  
+}  
+  
+  p{
+    margin-top: 10px;
+  }
+  
+  .Perfil{
+      font-family: 'obraletra';
+      font-size: 15px;
+      width: 330px; /* ancho fijo más reducido */
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      border-radius: 10%;
+      color: aliceblue;
+  }
+  
+  .Perfil h1{
+    text-align: center;
+  }
+  
+  .Perfil img{
+      margin: 10px;
+      max-width: 250px;
+      max-height: 250px;
+      border-radius: 100%;
+  }
+
+  .Perfil li, .Perfil p{
+    font-size: 15px;
+  }
+  
+  
+  h1{
+    font-family: 'obraletra';
+    margin-top: 5px;
+    display: grid;
+    place-items: center;  /* Centra en ambas direcciones */
+    height: 85px;
+    font-size: xx-large;
+    margin-bottom: 20;
+    width: 100%;
+  }
+
+  h1 p{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 65px;
+    display: grid;
+    place-items: center;  /* Centra en ambas direcciones */
+  }
+
+
+  footer {
+    width: 100%;
+    padding: 5%;
+    background-color: #000000;
+    color: aliceblue;
+    margin-top: 30px;
+    text-align: center;
+}
